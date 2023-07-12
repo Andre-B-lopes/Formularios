@@ -1,0 +1,140 @@
+
+#principal{
+	text-align: center;
+}
+
+#botoes{
+	padding: 50px 0 0 0;
+	text-align: center;
+}
+
+#criar{
+	padding: 50px 0 0 0;
+	text-align: center;
+}
+
+#questoes{
+	text-align: center;
+	float: left;
+	width: 50%;
+}
+
+#preview{
+	text-align: center;
+	float: right;
+	width: 50%;
+}
+
+#formulario{
+	margin-left: 10%;
+	width: 80%;
+}
+
+#texto-preview{
+	text-align: justify;
+}
+
+#add{
+	display: none;
+}
+
+#edit{
+	display: none;
+}
+
+#del{
+	display: none;
+}
+
+#radio{
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+#text{	
+	display: none;
+}
+
+.titulo{
+	text-align:center;
+	font-size:30px;
+	font-weight:bold;
+}
+
+.btn-criar{
+	border-radius: 5px;
+	width: 5%;
+}
+
+.tabela30{
+	width: 30%;
+	display: inline-table;
+	align-items: center;
+}
+
+.tabela60{
+	width: 60%;
+	display: inline-table;
+	align-items: center;
+}
+
+.tabela90{
+	width: 90%;
+	display: inline-table;
+	align-items: center;
+}
+
+.escrever{
+	padding: 25px 0 0 0;
+}
+
+.texto-index{
+ font-size: 30px;
+}
+
+.texto-enun{
+ font-size: 20px;
+ 
+}
+
+.texto-titulo{
+ font-size: 30px;
+ text-decoration: bold;
+}
+
+.texto-tabela{
+ font-size: 20px;
+ text-align: center;
+ 
+}
+
+.btn-g{
+	padding: .5rem 1rem;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	border-radius: 1.5rem;
+}
+
+.btn-g:hover{
+	transform: scale(1.1);
+    transition: all 0.5s;
+    background-color: rgb(61,115,61);
+}
+
+.btn-xlg{
+	padding: .5rem 1rem;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	border-radius: 1.5rem;
+}
+
+.img-index{
+	width:15%;
+}
+
+.img-edit{
+	width:5%;
+}
