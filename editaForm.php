@@ -9,7 +9,6 @@ if($_POST['ID']){$ID = $_POST['ID'];}else{$ID = '0';}
 
 	$result=pg_query($conn,"SELECT * FROM questao_formularios WHERE id_formulario=".$ID."");
 	$linhas = pg_num_rows($result);
-//echo $linhas;
 ?>
 <html>
 <head>
@@ -27,28 +26,6 @@ if($_POST['ID']){$ID = $_POST['ID'];}else{$ID = '0';}
 		document.getElementById('del').style.display='block';
 		document.getElementById('add').style.display='none';
 
-	}
-
-	
-	function quest(idf,id,pos,enun,idop1,op1,idop2,op2,idop3,op3,idop4,op4){
-		var textoEdit = "<form action='CreateEditDeleteForm.php' method='post'><table class='table table-striped table-striped tabela60'>";
-
-		textoEdit += "<input type='hidden' name='acao' value='3'>";
-		textoEdit += "<input type='hidden' name='idF' value='"+idf+"'>";
-		textoEdit += "<input type='hidden' name='id' value='"+id+"'>";
-		textoEdit += "<input type='hidden' name='ID' value='"+<?php echo $ID; ?>+"' >";
-
-		textoEdit += "<tr><td>Posição:</td><td><input name='posicao' style='width:100%' type='text' value='"+pos+"'></td></tr>";
-		textoEdit += "<tr><td>Enunciado:</td><td><input name='enun' style='width:100%' type='text' value='"+enun+"'></td></tr>";
-
-		textoEdit += "<tr><td>Opção 1:</td><td><input type='hidden' name='idop1' value='"+idop1+"'><input style='width:100%' type='text' name='op1' value='"+op1+"'></td></tr>";
-		textoEdit += "<tr><td>Opção 2:</td><td><input type='hidden' name='idop2' value='"+idop2+"'><input style='width:100%' type='text' name='op2' value='"+op2+"'></td></tr>";
-
-		textoEdit += "<tr><td>Opção 3:</td><td><input type='hidden' name='idop3' value='"+idop3+"'><input style='width:100%' type='text' name='op3' value='"+op3+"'></td></tr>";
-		textoEdit += "<tr><td>Opção 4:</td><td><input type='hidden' name='idop4' value='"+idop4+"'><input style='width:100%' type='text' name='op4' value='"+op4+"'></td></tr>";
-
-		textoEdit += "<tr><td colspan='2'><button class='btn btn-warning'>Alterar</button></td></tr></table></form>";
-		document.getElementById('editQuest').innerHTML= textoEdit;
 	}
 </script>
 
