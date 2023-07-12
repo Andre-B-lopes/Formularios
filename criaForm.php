@@ -38,7 +38,6 @@ require_once("CONN/conn.php");
 				echo "<tr><td>".$row['nome']."</td>";
 				echo "<td><form action=\"editaForm.php\" method=\"post\"><input type=\"hidden\" name=\"ID\" value=".$row['id']."><button class=\"btn btn-success\" type=\"submit\">EDITAR</button></form></td></tr>";
 			}
-			//<input type="radio" name="titulo">
 		?>
 	</table>
 </section>
