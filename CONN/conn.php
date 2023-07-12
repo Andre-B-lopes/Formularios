@@ -2,12 +2,6 @@
 
 error_reporting(0);
 
-
-/*$servername = "localhost";
-$username = "tifixcom_guard";
-$password = "guardiaoroot";
-$dbname = "tifixcom_os";
-*/
 $servername = "localhost";
 $username = "postgres";
 $password = "postgres";
